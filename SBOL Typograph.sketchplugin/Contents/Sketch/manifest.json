@@ -1,0 +1,26 @@
+{
+    "name": "SBOL Typograph",
+    "description": "Исправляем тексты на основе правил типографики",
+    "author": "Mikhail Danilov",
+    "authorEmail": "m.danilov@gmail.com",
+    "homepage": "https://danilovm.github.io/SBOLTypographSketch/",
+    "version": "1.0.2",
+    "identifier": "com.sketchapp.plugins.sboltypograph",
+    "appcast": "https://danilovm.github.io/SBOLTypographSketch/appcast.xml",
+    "icon": "icon.png",
+    "commands": [{
+        "name": "SBOL Typograph",
+        "identifier": "open",
+        "script": "sboltypograph.js",
+        "handlers": {
+            "run": "onRun"
+        }
+    }],
+    "menu": {
+        "title": "SBOL Typograph",
+        "items": [
+            "open"
+        ],
+        "isRoot": true
+    }
+}

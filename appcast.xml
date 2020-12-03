@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+	<channel>
+		<title>SBOL Typograph</title>
+		<link>https://danilovm.github.io/SBOLTypographSketch/appcast.xml</link>
+		<description>Плагин для исправления и форматирования текста на основе правил типографики со встроенным Ёфикатором</description>
+		<language>en</language>
+		<item>
+			<title>Version 1.0.2</title>
+			<description>Исправлена обработка телефонных номеров</description>
+			<enclosure url="https://danilovm.github.io/SBOLTypographSketch/download/sboltypograph-1.0.2.zip" sparkle:version="1.0.2"/>
+		</item>
+		<item>
+			<title>Version 1.0.1</title>
+			<enclosure url="https://danilovm.github.io/SBOLTypographSketch/download/sboltypograph-1.0.1.zip" sparkle:version="1.0.1"/>
+		</item>
+		<item>
+			<title>Version 1.0.0</title>
+			<description>Первая версия плагина</description>
+			<enclosure url="https://danilovm.github.io/SBOLTypographSketch/download/sboltypograph-1.0.0.zip" sparkle:version="1.0.0"/>
+		</item>
+	</channel>
+</rss>

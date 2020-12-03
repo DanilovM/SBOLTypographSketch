@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik|Scada&subset=cyrillic');
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+    line-height: 1.5rem;
+    background: #f1f0eb;
+    color: #323232;
+    overflow-x: hidden;
+}
+
+.container {
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 100;
+    position: relative;
+}
+
+a,
+a:visited {
+    color: #08A652;
+    text-decoration: underline;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+h2 {
+    font-family: 'Scada', sans-serif;
+    font-weight: normal;
+    font-size: 2rem;
+    font-variant: small-caps;
+    margin: 0;
+    color: #08A652;
+    position: relative;
+}
+
+section {
+    margin-bottom: 3rem;
+}
+
+samp {
+    padding: 0 .5rem;
+    margin: 0;
+    background-color: rgba(255, 255, 255, .7);
+    border: 1px solid rgba(0, 0, 0, .1);
+    border-radius: .2rem;
+    text-shadow: 0 1px rgba(255, 255, 255, 1);
+    /* white-space: nowrap; */
+    display: inline-block;
+}
+
+.screenshot {
+    height: 15rem;
+    float: right;
+    margin: 0 0 1rem 5rem;
+    -webkit-filter: drop-shadow(0 1rem 1rem rgba(0, 0, 0, .2));
+    filter: drop-shadow(0 1rem 1rem rgba(0, 0, 0, .2));
+}
+
+.header {
+    margin-bottom: 3rem;
+    z-index: 10000;
+    width: 100%;
+    box-shadow: 0 .1rem .6rem rgba(0, 0, 0, .2);
+    background: #08A652;
+    color: #fff;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.header__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 7rem;
+}
+
+.header__left {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 2rem;
+}
+
+.header__logo {
+    filter: drop-shadow(0 .1rem 0 rgba(0, 0, 0, .3));
+    height: 3.2rem;
+    margin-right: 2rem;
+}
+
+.header__title {
+    font-family: 'Scada', sans-serif;
+    font-weight: normal;
+    font-size: 3rem;
+    line-height: 2.4rem;
+    letter-spacing: .05rem;
+    font-variant: small-caps;
+    margin: 0 0 .5rem 0;
+    filter: drop-shadow(0 .1rem 0 rgba(0, 0, 0, .3));
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+}
+
+.header__titleTxt {
+    font-size: 1.1rem;
+    line-height: 1rem;
+    filter: drop-shadow(0 .1rem 0 rgba(0, 0, 0, .3));
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+}
+
+.header__titleTxt.extra {
+    display: none;
+}
+
+.header__download:link,
+.header__download:visited {
+    color: #08A652;
+}
+
+.header__download:hover {
+    color: #05823F;
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+}
+
+.header__download {
+    display: inline-block;
+    font-size: 150%;
+    font-weight: 400;
+    line-height: 1;
+    padding: .5rem 2rem;
+    background: #fff;
+    border-radius: .3rem;
+    box-shadow: 0 .1rem 0 rgba(0, 0, 0, .2);
+    text-decoration: none;
+    white-space: nowrap;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+}
+.header__download small {
+  font-size: 50%;
+  font-weight: 100;
+}
+.header.sticky .header__sticky {
+    position: fixed;
+    top: -15rem;
+    left: 0;
+    box-shadow: 0 0 .5rem rgba(0, 0, 0, .3);
+}
+
+.header.sticky.show .header__sticky {
+    top: 0;
+}
+
+.pluginRules {
+    display: block;
+    column-count: 2;
+    column-gap: 7%;
+}
+
+.pluginRules__item {
+    display: inline-block;
+    margin-bottom: 2rem;
+}
+
+.pluginRules__title {
+    font-family: 'Scada', sans-serif;
+    font-weight: normal;
+    font-size: 1.5rem;
+    font-variant: small-caps;
+    letter-spacing: .05rem;
+}
+
+.pluginRules__content {
+    margin: -.5rem 0 1rem 0;
+}
+
+.listBlock {
+    padding: 0 0 0 0.5rem;
+}
+
+.listBlock li {
+    list-style-type: none;
+    position: relative;
+    margin-bottom: .3rem;
+}
+
+.listBlock li::before {
+    position: absolute;
+    content: '';
+    background: #363636;
+    width: 2px;
+    height: 2px;
+    top: 0.7rem;
+    left: -0.5rem;
+    display: block;
+}
+
+@media screen and (max-width: 1400px) {
+    /* РЎСЂР°Р±Р°С‚С‹РІР°РµС‚ РєРѕРіРґР° С€РёСЂРёРЅР° Р±СЂР°СѓР·РµСЂР° РњР•РќР¬РЁР• 1400px */
+    .header__sticky {
+        flex-direction: column;
+    }
+    .navigate {
+        margin: 2rem 0;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    /* Срабатывает когда ширина браузера БОЛЬШЕ 1200px */
+    .container {
+        width: 1200px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    /* Срабатывает когда ширина браузера МЕНЬШЕ 1200px */
+    .container {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 1140px) {
+    /* Срабатывает когда ширина браузера МЕНЬШЕ 1140px */
+    .header__titleTxt {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    /* Срабатывает когда ширина браузера МЕНЬШЕ 960px */
+}
+
+@media screen and (max-width: 760px) {
+    /* Срабатывает когда ширина браузера МЕНЬШЕ 760px */
+    .header__title {
+        font-size: 2.2rem;
+    }
+    .header__titleTxt {
+        font-size: .9rem;
+    }
+    .header__logo {
+        height: 2.9rem;
+    }
+    .screenshot {
+        display: none;
+    }
+    .pluginRules {
+        column-count: auto;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    /* Срабатывает когда ширина браузера МЕНЬШЕ 660px */
+    .header__content {
+        height: auto;
+        padding: 1rem 0 .5rem 0;
+    }
+    .header__download {
+        font-size: 100%;
+        padding: .5rem;
+    }
+    .header__logo {
+        height: 2.5rem;
+        margin-right: 1rem;
+    }
+    .header__title {
+        margin: 0;
+    }
+    .header__titleTxt {
+        display: none;
+    }
+    .header__titleTxt.extra {
+        display: block;
+        padding-bottom: 1rem;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    /* Срабатывает когда ширина браузера МЕНЬШЕ 560px */
+    .header__title {
+        font-size: 2rem;
+    }
+    .header__titleTxt {
+        font-size: .8rem;
+    }
+    .header__logo {
+        height: 2rem;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    /* Срабатывает когда ширина браузера МЕНЬШЕ 470px */
+    .header__title {
+        font-size: 1.8rem;
+    }
+    .header__titleTxt {
+        font-size: .8rem;
+    }
+    .header__logo {
+        height: 2rem;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    /* Срабатывает когда ширина браузера МЕНЬШЕ 420px */
+    .header__left {
+        margin-right: 1rem;
+    }
+    .header__title {
+        font-size: 1.8rem;
+        margin-right: 1rem;
+    }
+    .header__titleTxt {
+        font-size: .8rem;
+    }
+    .header__logo {
+        display: none;
+    }
+}
