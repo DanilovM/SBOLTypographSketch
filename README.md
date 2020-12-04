@@ -91,4 +91,6 @@ Sketch плагин для исправления и форматировани�
 
 * Правильное написание *Mastercard, Visa, Мир, Google Pay, Apple Pay, Push-уведомления, ПИН-код, QR-код, сим-карта, СVV-код, СVС-код, СVV2-код, СVС2-код, CVV, CVC, СМС, Wi-Fi, email, офлайн, онлайн, мск*
 
-
+## Другие версии
+* __[SBOL Typograph Figma](https://www.figma.com/community/plugin/907888805660596065/SBOL-Typograph)__ — плагин для Figma
+* __[SBOL Typograph JS](https://danilovm.github.io/SBOLTypographJS/)__ — online версия типографа
