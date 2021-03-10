@@ -4,7 +4,7 @@
     "author": "Mikhail Danilov",
     "authorEmail": "m.danilov@gmail.com",
     "homepage": "https://danilovm.github.io/SBOLTypographSketch/",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "identifier": "com.sketchapp.plugins.sboltypograph",
     "appcast": "https://danilovm.github.io/SBOLTypographSketch/appcast.xml",
     "icon": "icon.png",
